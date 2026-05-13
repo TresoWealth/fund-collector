@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import { FundDataCollector } from './components/FundDataCollector';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="min-h-screen bg-[#f8f9fa]">
+      <header className="bg-white border-b-4 border-[#00ffa3]">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-center">
+          <img src="/treso-logo.png" alt="TresoWealth" className="h-12" />
+        </div>
       </header>
+      <main className="max-w-6xl mx-auto px-4 py-8">
+        <FundDataCollector />
+      </main>
     </div>
   );
 }
-
 export default App;

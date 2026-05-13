@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+/* ===== TresoWealth Brand Tokens ===== */
+:root {
+  --ol-white: #ffffff;
+  --ol-dark: #18191b;
+  --accent: #00ffa3;
+  --surface: #f5f5f5;
+  --treso-blue: #0033a0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+/* ===== Global resets ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--surface);
+  color: var(--ol-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ===== Header ===== */
+header {
+  background-color: var(--ol-white);
+  border-bottom: 3px solid var(--accent);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+header img {
+  height: 52px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ===== Main container ===== */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ===== Section cards ===== */
+.border {
+  background-color: var(--ol-white);
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+  color: var(--ol-dark);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* ===== Form controls ===== */
+label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  display: inline-block;
+}
+
+input[type='text'],
+input[type='date'],
+input[type='number'],
+input[type='url'],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* ===== Buttons ===== */
+button[type='submit'],
+.bg-\[\#00ffa3\] {
+  background-color: var(--accent);
+  color: var(--ol-dark);
+  border: none;
+  padding: 0.65rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type='submit']:hover,
+.bg-\[\#00ffa3\]:hover {
+  background-color: #00e094;
 }

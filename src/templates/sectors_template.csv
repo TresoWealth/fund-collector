@@ -1,0 +1,6 @@
+sector_name,sector_weight,sub_sectors
+Financial Services,35.4,"{""banks"": 20.2, ""insurance"": 10.5, ""nbfc"": 4.7}"
+Technology,15.2,"{""software"": 12.1, ""hardware"": 3.1}"
+Healthcare,12.8,"{""pharma"": 8.5, ""hospitals"": 4.3}"
+Consumer Goods,11.5,"{""fmcg"": 7.2, ""durables"": 4.3}"
+Energy,8.7,"{""oil_gas"": 5.5, ""power"": 3.2}"
